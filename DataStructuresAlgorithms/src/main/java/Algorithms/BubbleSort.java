@@ -17,6 +17,8 @@ public class BubbleSort {
         return arr;
     }
 
+    //confirm this is conventional before moving forward
+
     public static void main(String[] args) {
         bubbleSort(exampleArr);
     }
