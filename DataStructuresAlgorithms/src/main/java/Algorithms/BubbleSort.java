@@ -14,6 +14,9 @@ public class BubbleSort {
                 }
             }
         }
+        for (int x : arr){
+            System.out.print(x + ", ");
+        }
         return arr;
     }
 
