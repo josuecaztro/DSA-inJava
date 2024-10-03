@@ -20,7 +20,4 @@ public class BubbleSort {
         return arr;
     }
 
-    public static void main(String[] args) {
-        bubbleSort(exampleArr);
-    }
 }

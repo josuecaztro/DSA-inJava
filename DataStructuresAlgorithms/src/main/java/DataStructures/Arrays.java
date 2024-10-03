@@ -15,8 +15,5 @@ public class Arrays {
         return solution;
     }
 
-    public static void main(String[] args) {
-        findLowestValue(exampleArray);
-    }
 
 }
