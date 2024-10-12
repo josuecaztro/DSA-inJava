@@ -63,7 +63,25 @@ public class LinkedList {
         //the while condition to successfully traverse
         //must include .next because we compare to next value for this occasion
         while (current != null && current.next != null){
-
+            //check if next value is a duplicate
+            if (current.val == current.next.val){
+                /*this line here is so important down below. this
+                is how we delete a node in our linked list.
+                We're saying take skip over .next and
+                refer to .next.next.
+                 */
+                current.next = current.next.next;
+            } else {
+                //if values are different, continue traversing
+                current = current.next;
+            }
         }
+        /* at first i was returning dummy, but you have to remember
+        * dummy is just a pointer here. if you try to return dummy it
+        * returns the last node, which we were at last. to return the solution
+        * linked list, we return head. since dummy was a reference to head, it was
+        * always updating head's list to be correct. so remember these are java
+        * objects we were referencing to, so it was being updated with the pointer (current)  */
+        return head;
     }
 }
