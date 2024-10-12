@@ -20,11 +20,7 @@ public class LinkedList {
         }
     }
 
-    /* LEETCODE PROBLEM #21
-    MERGE TWO LINKED LISTS INTO ONE IN SORTED ORDER
-    I'm not gonna make a PSVM or example list1s or list2s. So just refer to
-    Leetcode Problem #21 */
-
+    // Refer to LeetCode 21 - Solution
     public ListNode mergeTwoLists(ListNode list1, ListNode list2) {
         //make a new linked list starting with the head
         ListNode myLinks = new ListNode(0);
@@ -45,7 +41,6 @@ public class LinkedList {
         through the linked list appropriately*/
             myTail = myTail.next;
         }
-
         //clean up any remaining nodes from either linked list
         if (list1 != null) {
             myTail.next = list1;
@@ -56,5 +51,19 @@ public class LinkedList {
         technically where the first correct node was placed
          */
         return myLinks.next;
+    }
+
+
+    //refer to Leetcode #83 - Solution
+    public ListNode deleteDuplicates (ListNode head){
+        //current will be our pointer.
+        //current is what we use to traverse thru head linked list
+        ListNode current = head;
+
+        //the while condition to successfully traverse
+        //must include .next because we compare to next value for this occasion
+        while (current != null && current.next != null){
+
+        }
     }
 }
